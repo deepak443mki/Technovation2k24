@@ -1,0 +1,190 @@
+.page1 {
+    background-image: url(https://www.cmu.edu/ini/images/news_images/2020/roborace_1400x700.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page1 .bg {
+    background-image: linear-gradient(to top,
+            rgb(0 0 0),
+            rgb(0 0 0 / 33%) 60%,
+            rgb(0 0 0 / 86%) 100%);
+    background-repeat: no-repeat;
+}
+
+body {
+    max-width: 100%;
+    background-color: #000000;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    padding: 7px 10px;
+    background-color: rgb(163 166 1);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(57, 69, 0);
+}
+
+
+#lpage {
+    margin: 80px 0px 100px 0px;
+    padding: 60px 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#lpage>a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgb(123, 150, 0);
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+#lpage>a:hover {
+    background-color: rgb(123, 150, 0);
+    border: 1px solid rgb(213, 255, 26);
+    transform: scale(1.02);
+}
+
+#lpage>h1 {
+    font-size: 50px;
+}
+
+footer {
+    margin: 5px;
+    padding: 30px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    background-color: rgba(63, 63, 63, 0.641);
+}
+
+#sm {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#sm>a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 440px) {
+
+    h2 {
+        font-size: 1em;
+    }
+
+    #lpage {
+        margin: 30px 0px 100px 0px;
+    }
+
+    #lpage>h1 {
+        font-size: 45px;
+    }
+
+    #lpage>a {
+        margin: 20px;
+    }
+
+    #sm {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #vc {
+        font-size: 1.4em;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    header {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    ul {
+        padding: 0px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    Nav ul li a {
+        padding: 7px 10px;
+        background-color: #9c9f24;
+    }
+
+    nav a:hover {
+        background-color: #7d7f18;
+    }
+}

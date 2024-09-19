@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technovation 2k24</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.gec.edu.in/assets/img/favicon.png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<i></i>
+
+<body>
+    <section class="page1">
+        <div class="bg">
+            <header>
+                <div class="logo">
+                    <img src="https://www.gec.edu.in/assets/img/logo/logon.png" alt="GEC logo" height="110px" />
+                </div>
+                <nav class="topnav">
+                    <ul>
+                        <li><a href="event.html">Events</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="result.html">Result</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="lpage">
+
+                <h1>GEC <br>Technovation 2024</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, <br> magnam! In corrupti, perferendis
+                    sunt voluptatum animi nisi velit. Amet, dicta.
+                </p>
+                <a href="event.html">
+                    <h2>
+                        Participate now >>
+                    </h2>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="sm">
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="youtube" height="30px"> </a>
+            <a href="google.com" target="_blank"><img src="instagram.png" alt="insta" height="30px"></a>
+            <a href="google.com" target="_blank"><img src="twitter.png" alt="twitter" height="30px"></a>
+            <a href="google.com" target="_blank"><img src="facebook.png" alt="facebook" height="30px"></a>
+
+        </div>
+        <div>
+            <h1 id="vc"><span id="visitCount"></span> visited this page</h1>
+            <p>&#169 Copyright.All Rights Reserved. Deepak Kuamar Majhi 2301292474</p>
+        </div>
+    </footer>
+    <script>
+        if (localStorage.getItem("visitCount")) {
+            localStorage.setItem(
+                "visitCount",
+                Number(localStorage.getItem("visitCount")) + 1
+            );
+        } else {
+            localStorage.setItem("visitCount", 1);
+        }
+
+        document.getElementById("visitCount").innerText =
+            localStorage.getItem("visitCount");
+    </script>
+</body>
+
+</html>
