@@ -84,11 +84,15 @@ nav   a:hover{
 button{
     color: white;
     font-size: 20px;
-    background-color: #9c9f24;
+    background-color: #7e4380;
     cursor: pointer;
-    border: 1px solid #9c9f24;
+    border: 1px solid #7e4380;
     border-radius: 5px;
     padding: 10px;
+}
+
+button:hover{
+    background-color: #452046;
 }
 
 
@@ -178,5 +182,14 @@ footer{
 
     nav   a:hover{
         background-color: #7d7f18;
+    }
+
+    button{
+        background-color: #929426;
+        border: 1px solid #9c9f24;
+    }
+
+    button:hover{
+        background-color: #53540f;
     }
 }
