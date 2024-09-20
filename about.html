@@ -5,21 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.gec.edu.in/assets/img/favicon.png">
-
-    <title>Document</title>
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
-    <section>
-        <nav>
-            <h1>About</h1>
-        </nav>
-    </section>
-    <section>
-        <div>
-
+    <section class="page1">
+        <div class="bg">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="https://www.gec.edu.in/assets/img/logo/logon.png" alt="GEC logo"
+                            height="90px"></a>
+                </div>
+                <nav class="topnav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="event.html">Events</a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <div id="lpage">
+                <h1 class="roboto">About Tech fest</h1>
+                <span></span>
+                <span></span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, sequi dicta? Inventore a voluptatum quas porro ut ad expedita reiciendis eum architecto saepe dolor cumque error magni molestiae voluptate assumenda amet fugiat obcaecati, sed ipsa voluptatibus rem, accusantium est recusandae! Architecto tenetur animi dolores, nisi provident incidunt dolor earum veritatis amet blanditiis repellendus atque assumenda ad esse? Tempora iusto aspernatur, cupiditate saepe minus dolore eius voluptate vel deserunt delectus facilis nostrum, corrupti similique. Enim tempore labore, temporibus ipsum, perferendis culpa eius amet magni vero obcaecati deleniti eligendi natus asperiores ipsa, maxime rerum numquam voluptas assumenda iusto mollitia. Reiciendis, voluptas temporibus?</p>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <div id="sm">
+            <a href="google.com" target="_blank"><img src="youtube.png" alt="youtube" height="30px"> </a>
+            <a href="google.com" target="_blank"><img src="instagram.png" alt="insta" height="30px"></a>
+            <a href="google.com" target="_blank"><img src="twitter.png" alt="twitter" height="30px"></a>
+            <a href="google.com" target="_blank"><img src="facebook.png" alt="facebook" height="30px"></a>
+
+        </div>
+        <div>
+            <h1 id="vc"><span id="visitCount"></span> visited this page</h1>
+            <p>&#169 Copyright.All Rights Reserved. Deepak Kuamar Majhi 2301292474</p>
+        </div>
+    </footer>
+    <script>
+        if (localStorage.getItem("visitCount")) {
+            localStorage.setItem(
+                "visitCount",
+                Number(localStorage.getItem("visitCount")) + 1
+            );
+        } else {
+            localStorage.setItem("visitCount", 1);
+        }
+
+        document.getElementById("visitCount").innerText =
+            localStorage.getItem("visitCount");
+    </script>
 </body>
 
 </html>
