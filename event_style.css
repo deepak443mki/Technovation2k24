@@ -80,6 +80,17 @@ div.card:hover {
     transform: scale(1.1);
 }
 
+button {
+    padding: 5px 10px;
+    color: white;
+    background-color: #012d61;
+    border: 1px solid #012d61;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #001d40;
+}
+
 footer {
     margin: 5px;
     padding: 30px;
